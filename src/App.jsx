@@ -4,6 +4,7 @@ import Greetings from "./components/Greetings";
 import IdCard from "./components/IdCard";
 import Random from "./components/Random";
 import CreditCard from "./components/CreditCard";
+import LikeButton from "./components/LikeButton";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         lastName="Konnichiwah"
         gender="female"
         height={172}
-        birth="1988-05-11"
+        birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
       <hr />
@@ -24,7 +25,7 @@ function App() {
       <hr />
       <Random min={1} max={6} />
       <br />
-      <Random min={1} max={100} />
+      <Random min={10} max={100} />
       <hr />
       <BoxColor r={46} g={124} b={0} />
       <hr />
@@ -38,6 +39,8 @@ function App() {
         bgColor="#11aa99"
         color="white"
       />
+      <LikeButton />
+      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
     </div>
   );
 }

@@ -5,7 +5,7 @@ function IdCard(props) {
       <h5>Last name: {props.lastName}</h5>
       <h5>Gender: {props.gender}</h5>
       <h5>Height: {props.height}</h5>
-      <h5>Birth:{props.birth}</h5>
+      <h5>Birth:{props.birth.toDateString()}</h5>
       <img src={props.picture} alt={props.firstName} />
     </div>
   );
